@@ -10,9 +10,14 @@
 ## Inhaltsverzeichnis
 
 - [Inhaltsverzeichnis](#Inhaltsverzeichnis)
+- [Kompilieren des UI Files](#Kompilieren)
 - [Ordnerstruktur](#Ordnerstruktur)
 
 
+## Kompilieren des UI Files
+Die Datei mainwindow_ui.py muss, aus der Designer UI Datei erzeugt werden <br \>
+
+`pyside6-uic.exe -o src\mainwindow_ui.py .\ui\mainwindow.ui`      
 
 ## Ordnerstruktur
 - **main.py**: Die Hauptdatei, hier wird die Anwendung gestartet.
