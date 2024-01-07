@@ -19,7 +19,7 @@
 
 - **README.md**: eine kurze Beschreibung, Installationsanweisungen, etc.
 
-- **requirements.txt**: Eine Datei, die die Abhängigkeiten des Projekts auflistet.
+- **requirements.txt**: Eine Datei, die die Abhängigkeiten des Projekts auflistet.<br />
   Abhängigkeiten können mit `pip install -r requirements.txt` installiert werden.
 
 - **ui/**: Enthält alle UI-Dateien, die mit dem Qt Designer erstellt wurden (z. B. mainwindow.ui).
