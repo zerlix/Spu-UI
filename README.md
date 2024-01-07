@@ -24,7 +24,8 @@ Die Datei mainwindow_ui.py muss, aus der Designer UI Datei erzeugt werden <br \>
 
 - **README.md**: eine kurze Beschreibung, Installationsanweisungen, etc.
 
-- **requirements.txt**: Eine Datei, die die Abhängigkeiten des Projekts auflistet. Abhängigkeiten können mit `pip install -r requirements.txt` installiert werden.
+- **requirements.txt**: Eine Datei, die die Abhängigkeiten des Projekts auflistet.<br />
+  Abhängigkeiten können mit `pip install -r requirements.txt` installiert werden.
 
 - **ui/**: Enthält alle UI-Dateien, die mit dem Qt Designer erstellt wurden (z. B. mainwindow.ui).
 
