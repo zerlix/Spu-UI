@@ -31,7 +31,7 @@ Die Datei mainwindow_ui.py muss, aus der Designer UI Datei erzeugt werden <br />
 
 - **src/**: Hier liegen die Quellcodedateien.
   - **\_\_init\_\_.py**: Eine leere Datei, die sicherstellt, dass Python den Ordner als Modul erkennt. 
-  - **mainwindow.py**: Die Implementierung der Hauptfensterklasse, in der du die Logik deiner Anwendung platzieren kannst.
+  - **mainwindow.py**: Die Implementierung der Hauptfensterklasse, in der du die Logik der Anwendung platzieren kannst.
 
 - **resources/**: Ordner für Ressourcen.
   - **images/**: Ein Unterordner für Bilder.
