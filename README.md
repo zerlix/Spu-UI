@@ -15,12 +15,14 @@
 
 
 ## Kompilieren des UI Files
-Die UI Dateien aus dem Verzeichnis ./ui müssen mit dem script ui_compile.py kompiliert werden<br />
+Die UI Dateien aus dem Verzeichnis `./ui` müssen mit dem script `ui_compile.py` kompiliert werden<br />
+Die kompilierten Python Dateien liegen dann im Verzeichnis `./src` <br />
+
 `python ui_compile.pyi`      
 
 ## Ordnerstruktur
 - **main.py**: Die Hauptdatei, hier wird die Anwendung gestartet.
-- **ui_compile.py**:  Script um die UI Files zu kompiliert
+- **ui_compile.py**:  Script um die UI Files zu kompilieren
 
 - **README.md**: eine kurze Beschreibung, Installationsanweisungen, etc.
 
