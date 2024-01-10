@@ -7,8 +7,8 @@ os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
 
 from PySide6.QtCore import Qt 
 from PySide6.QtWidgets import QApplication, QMainWindow
-from src.MainWindow_ui import Ui_MainWindow
-from src.DialogProjectName_ui import Ui_DialogProjectName
+from src.ui_MainWindow import Ui_MainWindow
+from src.ui_DialogProjectName import Ui_DialogProjectName
 
 
 
