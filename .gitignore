@@ -1,4 +1,4 @@
  Ignoriere das .venv-Verzeichnis
 .venv/
-src/mainwindow_ui.py
+ui/mainwindow_ui.py
 src/__pycache__
