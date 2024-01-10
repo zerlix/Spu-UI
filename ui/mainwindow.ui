@@ -100,7 +100,7 @@
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../resources/images/gear-2-multi-size.ico</normaloff>../resources/images/gear-2-multi-size.ico</iconset>
+       <normaloff>../resources/images/gear-2-64.png</normaloff>../resources/images/gear-2-64.png</iconset>
      </property>
      <property name="iconSize">
       <size>

@@ -57,7 +57,7 @@ class Ui_MainWindow(object):
         self.toolButtonProjektname.setAutoFillBackground(False)
         self.toolButtonProjektname.setText(u"")
         icon = QIcon()
-        icon.addFile(u"../resources/images/gear-2-multi-size.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"../resources/images/gear-2-64.png", QSize(), QIcon.Normal, QIcon.Off)
         self.toolButtonProjektname.setIcon(icon)
         self.toolButtonProjektname.setIconSize(QSize(42, 42))
         self.toolButtonProjektname.setCheckable(True)
