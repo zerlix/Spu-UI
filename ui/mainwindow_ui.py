@@ -25,8 +25,6 @@ class Ui_MainWindow(object):
         MainWindow.resize(1280, 800)
         MainWindow.setMinimumSize(QSize(1280, 800))
         MainWindow.setMaximumSize(QSize(1280, 800))
-        MainWindow.setStyleSheet(u"background-color: rgb(0, 0, 0);\n"
-"color: rgb(255, 255, 255);")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         sizePolicy = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
