@@ -18,7 +18,12 @@ class DialogProjectName(QMainWindow, Ui_DialogProjectName):
     def __init__(self):
         super(DialogProjectName, self).__init__()
         self.setupUi(self)
+        self.pushButton_Abbrechen.clicked.connect(self.close)
+        self.pushButton_OK.clicked.connect(self.changeProjectName)
 
+
+    def changeProjectName(self):
+        pass
 
 
 
