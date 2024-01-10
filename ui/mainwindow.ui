@@ -83,12 +83,12 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButtonProjektname">
+    <widget class="QToolButton" name="toolButtonProjektname">
      <property name="geometry">
       <rect>
-       <x>1210</x>
+       <x>1200</x>
        <y>30</y>
-       <width>48</width>
+       <width>49</width>
        <height>48</height>
       </rect>
      </property>
@@ -96,7 +96,7 @@
       <bool>false</bool>
      </property>
      <property name="text">
-      <string/>
+      <string notr="true"/>
      </property>
      <property name="icon">
       <iconset>
@@ -108,7 +108,7 @@
        <height>42</height>
       </size>
      </property>
-     <property name="flat">
+     <property name="checkable">
       <bool>true</bool>
      </property>
     </widget>

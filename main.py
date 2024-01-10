@@ -6,16 +6,25 @@ import os
 os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
 
 from PySide6.QtCore import Qt 
-from PySide6.QtWidgets import QApplication
-from PySide6.QtGui import QGuiApplication
-from src.mainwindow import MainWindow
+from PySide6.QtWidgets import QApplication, QMainWindow
+from src.MainWindow_ui import Ui_MainWindow
+        
+
+
+class MainWindow(QMainWindow, Ui_MainWindow):
+    def __init__(self):
+        super(MainWindow, self).__init__()
+        self.setupUi(self)
+
+
 
 
 if __name__ == "__main__":
     # Mainwindow
     app = QApplication(sys.argv)
 
-    main_window = MainWindow()
-    main_window.show()
+    main_Window = MainWindow()
+    main_Window.show()
+    
 
     sys.exit(app.exec())
