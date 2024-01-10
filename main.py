@@ -33,11 +33,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super(MainWindow, self).__init__()
         self.setupUi(self)
         self.toolButtonProjektname.clicked.connect(self.openDialogProjectName)
-
+        self.dialogProjectName = DialogProjectName()
+       
 
     'Methode zum öffnen des Dialogs zum editieren des Projektnamens '
     def openDialogProjectName(self):
-        self.dialogProjectName = DialogProjectName()
         self.dialogProjectName.show()
 
 
@@ -46,14 +46,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
 ''' Hauptprogramm '''
 if __name__ == "__main__":
-    # Mainwindow
+ 
     app = QApplication(sys.argv)
 
     main_Window = MainWindow()
     main_Window.show()
-    widget_EditProjectName = DialogProjectName()
-    
-    
-
+ 
     sys.exit(app.exec())
 
