@@ -1,5 +1,9 @@
  Ignoriere das .venv-Verzeichnis
 .venv/
 ui/MainWindow_ui.py
-ui/DialogProjectName.py
+ui/DialogProjectName_ui.py
 src/__pycache__
+src/MainWindow_ui.py
+src/DialogProjectName_ui.py
+
+
