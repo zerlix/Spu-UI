@@ -26,16 +26,16 @@ class DialogProjectName(QMainWindow, Ui_DialogProjectName):
 
     def okClicked(self):
         self.changeProjectName()
+        self.close()
+
 
     def changeProjectName(self):
         self.lineEditProjektName.textChanged.connect(self.main_window.labelProjektname.setText(self.lineEditProjektName.text()))
         '''TODO: 
            Projekname musss zwischengespeichert werden und bei Programmstart wieder geladen werden
            - Dazu muss das Projektname in einer Datei gespeichert werden
-           - ENTER Taste soll den Dialog, mit OK, schließen
-           - ESCAPE Taste soll den Dialog, mit Abbrechen, schließen
         '''
-        self.close()
+        
 
 
 
