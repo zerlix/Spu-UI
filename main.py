@@ -3,10 +3,10 @@ import sys
 import os
 
 # Setzen Sie QT_IM_MODULE auf 'qtvirtualkeyboard'
-os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
+#os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
 
-from PySide6.QtCore import Qt 
-from PySide6.QtWidgets import QApplication, QMainWindow, QLabel, QDialog, QDialogButtonBox, QVBoxLayout
+from PySide6.QtGui import QIcon 
+from PySide6.QtWidgets import QApplication, QMainWindow
 from src.ui_MainWindow import Ui_MainWindow
 from src.ui_DialogProjectName import Ui_DialogProjectName
 
@@ -33,6 +33,7 @@ class DialogProjectName(QMainWindow, Ui_DialogProjectName):
            Projekname musss zwischengespeichert werden und bei Programmstart wieder geladen werden
            - Dazu muss das Projektname in einer Datei gespeichert werden
            - ENTER Taste soll den Dialog, mit OK, schließen
+           - ESCAPE Taste soll den Dialog, mit Abbrechen, schließen
         '''
         self.close()
 
@@ -43,9 +44,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.setupUi(self)
+        'projektname'
         self.toolButtonProjektname.clicked.connect(self.openDialogProjectName)
         self.dialogProjectName = DialogProjectName(self)
-     
+
+        icon = QIcon("resources/images/gear-2-64.png")
+        self.toolButtonProjektname.setIcon(icon)
+
+
+
+
     'Methode zum öffnen des Dialogs zum editieren des Projektnamens '
     def openDialogProjectName(self):
         self.dialogProjectName.show()
@@ -55,9 +63,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
 ''' Hauptprogramm '''
 if __name__ == "__main__":
- 
+    print(os.getcwd())
+   
+   
     app = QApplication(sys.argv)
-
     main_Window = MainWindow()
     main_Window.show()
  
