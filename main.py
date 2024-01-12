@@ -64,24 +64,24 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 stylesheet = """
 
     MainWindow {
-        background-color: black;
+        background-color: #1a1a1a;
         background-image: url("resources/images/glass-transparent-2.png"); 
         background-repeat: no-repeat; 
         background-position: center;
         border: none;   
     }
 
-    .labelProjektname {
+    QLabel#labelProjektname {
         font-family: 'Segoe UI';
         font-size: 36px;
-        font-weight: bold;
-        font-color: white;
+        color: white;
     }
 
     DialogProjectName {
         background-color: #1a1a1a;
         border: none;
     }
+
 """
 
 
