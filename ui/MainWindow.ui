@@ -43,83 +43,67 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <widget class="QGroupBox" name="groupBoxProjektname">
+   <widget class="QLabel" name="labelProjektname">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
-      <width>1280</width>
-      <height>100</height>
+      <y>10</y>
+      <width>1281</width>
+      <height>91</height>
      </rect>
     </property>
-    <property name="contextMenuPolicy">
-     <enum>Qt::DefaultContextMenu</enum>
+    <property name="font">
+     <font>
+      <pointsize>48</pointsize>
+     </font>
     </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="title">
-     <string/>
+    <property name="text">
+     <string>Hamburg RB0, Tag 1</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonProjektname">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>20</y>
+      <width>64</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../resources/images/gear-42.png</normaloff>../resources/images/gear-42.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>42</width>
+      <height>42</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
     <property name="flat">
      <bool>true</bool>
     </property>
-    <widget class="QLabel" name="labelProjektname">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>1281</width>
-       <height>91</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>48</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Hamburg RB0, Tag 1</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButtonProjektname">
-     <property name="geometry">
-      <rect>
-       <x>1200</x>
-       <y>30</y>
-       <width>48</width>
-       <height>48</height>
-      </rect>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="text">
-      <string notr="true"/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../resources/images/gear-2-64.png</normaloff>../resources/images/gear-2-64.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>42</width>
-       <height>42</height>
-      </size>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
    </widget>
   </widget>
  </widget>

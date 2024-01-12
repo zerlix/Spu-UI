@@ -7,7 +7,7 @@ import os
 
 from PySide6.QtGui import QIcon 
 from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtWidgets import QApplication, QMainWindow, QGraphicsDropShadowEffect, QWidget
 from src.ui_MainWindow import Ui_MainWindow
 from src.ui_DialogProjectName import Ui_DialogProjectName
 
@@ -22,8 +22,21 @@ class DialogProjectName(QMainWindow, Ui_DialogProjectName):
         self.main_window = main_window
         super(DialogProjectName, self).__init__()
         self.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        
         self.pushButton_Abbrechen.clicked.connect(self.close)
         self.pushButton_OK.clicked.connect(self.okClicked)
+
+
+        # TODO: 
+        # - Positionierung des Dialogfenster arbeitet nicht richtig
+        main_x = main_window.pos().x()
+        main_y = main_window.pos().y() 
+        # Berechne x-Position
+        x = main_x + (main_window.width() - self.width()) / 2  
+        # Setze y-Position
+        y = main_y + 20
+        #self.move(x, y)
 
 
     def okClicked(self):
@@ -51,10 +64,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         self.pushButtonProjektname.clicked.connect(self.openDialogProjectName)
         self.dialogProjectName = DialogProjectName(self)
-
-        icon = QIcon("resources/images/gear-2-64.png")
-        self.pushButtonProjektname.setIcon(icon)
-        
+         
     'Methode zum öffnen des Dialogs zum editieren des Projektnamens '
     def openDialogProjectName(self):
         self.dialogProjectName.show()
@@ -64,7 +74,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 stylesheet = """
 
     MainWindow {
-        background-color: #1a1a1a;
+        background-color: grey;
         background-image: url("resources/images/glass-transparent-2.png"); 
         background-repeat: no-repeat; 
         background-position: center;
@@ -72,17 +82,36 @@ stylesheet = """
     }
 
     QLabel#labelProjektname {
+        color: white;
         font-family: 'Segoe UI';
         font-size: 36px;
-        color: white;
     }
 
+    QPushButton#pushButtonProjektname {
+        border: none;
+        background-color: transparent;
+        background-image: url("resources/images/gear-42.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    QPushButton#pushButtonProjektname:hover {
+        border: none;
+        background-color: transparent;
+        background-image: url("resources/images/gear-64.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+   
     DialogProjectName {
         background-color: #1a1a1a;
         border: none;
     }
 
 """
+
 
 
 if __name__ == "__main__":
