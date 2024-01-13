@@ -12,10 +12,7 @@ from src.ui_MainWindow import Ui_MainWindow
 from src.ui_DialogProjectName import Ui_DialogProjectName
 
 
-
-
-
-    
+ 
 class DialogProjectName(QMainWindow, Ui_DialogProjectName):
     ''' Klasse die den Dialog zum editieren des Projekt Name erstellt '''    
     def __init__(self, main_window):
@@ -74,7 +71,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 stylesheet = """
 
     MainWindow {
-        background-color: grey;
+        background-color: #1a1a1a;
         background-image: url("resources/images/glass-transparent-2.png"); 
         background-repeat: no-repeat; 
         background-position: center;
