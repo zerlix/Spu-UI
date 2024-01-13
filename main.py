@@ -5,9 +5,9 @@ import os
 # Setzen Sie QT_IM_MODULE auf 'qtvirtualkeyboard'
 #os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
 
-from PySide6.QtGui import QIcon 
+from PySide6.QtGui import QIcon, QFont, QFontDatabase 
 from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QApplication, QMainWindow, QGraphicsDropShadowEffect, QWidget
+from PySide6.QtWidgets import QApplication, QMainWindow
 from src.ui_MainWindow import Ui_MainWindow
 from src.ui_DialogProjectName import Ui_DialogProjectName
 
@@ -80,8 +80,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
 
 
-stylesheet = """
 
+
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+ 
+    stylesheet = """
     MainWindow {
         background-color: #1a1a1a;
         background-image: url("resources/images/glass-transparent-2.png"); 
@@ -89,13 +94,11 @@ stylesheet = """
         background-position: center;
         border: none;   
     }
-
     QLabel#labelProjektname {
         color: white;
-        font-family: 'Segoe UI';
+        font-family: 'spu';
         font-size: 36px;
     }
-
     QPushButton#pushButtonProjektname {
         border: none;
         background-color: transparent;
@@ -103,7 +106,6 @@ stylesheet = """
         background-repeat: no-repeat;
         background-position: center;
     }
-
     QPushButton#pushButtonProjektname:hover {
         border: none;
         background-color: transparent;
@@ -111,22 +113,13 @@ stylesheet = """
         background-repeat: no-repeat;
         background-position: center;
     }
-
-
-   
     DialogProjectName {
         background-color: #1a1a1a;
         border: none;
     }
-
 """
-
-
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
     app.setStyleSheet(stylesheet) 
+    
     main_Window = MainWindow()
     main_Window.show()
     sys.exit(app.exec())

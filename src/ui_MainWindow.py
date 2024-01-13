@@ -15,9 +15,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QFormLayout, QLCDNumber, QLabel,
-    QMainWindow, QPushButton, QSizePolicy, QVBoxLayout,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QFormLayout, QFrame, QLCDNumber,
+    QLabel, QMainWindow, QPushButton, QSizePolicy,
+    QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -55,19 +55,19 @@ class Ui_MainWindow(object):
         self.pushButtonProjektname.setAutoFillBackground(False)
         self.pushButtonProjektname.setText(u"")
         icon = QIcon()
-        icon.addFile(u"../resources/images/gear-42.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"../../../.designer/resources/images/gear-42.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButtonProjektname.setIcon(icon)
         self.pushButtonProjektname.setIconSize(QSize(42, 42))
         self.pushButtonProjektname.setCheckable(True)
         self.pushButtonProjektname.setAutoDefault(False)
         self.pushButtonProjektname.setFlat(True)
-        self.widget = QWidget(self.centralwidget)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(324, 180, 631, 152))
-        self.m2formLayout = QFormLayout(self.widget)
+        self.layoutWidget = QWidget(self.centralwidget)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(324, 180, 631, 152))
+        self.m2formLayout = QFormLayout(self.layoutWidget)
         self.m2formLayout.setObjectName(u"m2formLayout")
         self.m2formLayout.setContentsMargins(0, 0, 0, 0)
-        self.m2lcdNumber = QLCDNumber(self.widget)
+        self.m2lcdNumber = QLCDNumber(self.layoutWidget)
         self.m2lcdNumber.setObjectName(u"m2lcdNumber")
         sizePolicy2 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
         sizePolicy2.setHorizontalStretch(0)
@@ -83,20 +83,21 @@ class Ui_MainWindow(object):
 
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.m2pushButton = QPushButton(self.widget)
+        self.m2pushButton = QPushButton(self.layoutWidget)
         self.m2pushButton.setObjectName(u"m2pushButton")
 
         self.verticalLayout.addWidget(self.m2pushButton)
 
-        self.m2label = QLabel(self.widget)
+        self.m2label = QLabel(self.layoutWidget)
         self.m2label.setObjectName(u"m2label")
         font2 = QFont()
         font2.setFamilies([u"Segoe Fluent Icons"])
         font2.setPointSize(14)
         self.m2label.setFont(font2)
+        self.m2label.setFrameShape(QFrame.NoFrame)
         self.m2label.setTextFormat(Qt.RichText)
         self.m2label.setScaledContents(False)
-        self.m2label.setAlignment(Qt.AlignCenter)
+        self.m2label.setAlignment(Qt.AlignBottom|Qt.AlignLeading|Qt.AlignLeft)
 
         self.verticalLayout.addWidget(self.m2label)
 

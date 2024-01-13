@@ -84,7 +84,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../resources/images/gear-42.png</normaloff>../resources/images/gear-42.png</iconset>
+      <normaloff>../../../.designer/resources/images/gear-42.png</normaloff>../../../.designer/resources/images/gear-42.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -105,7 +105,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>324</x>
@@ -157,6 +157,9 @@
            <pointsize>14</pointsize>
           </font>
          </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
          <property name="text">
           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;m&lt;/span&gt;&lt;span style=&quot; font-size:48pt; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
@@ -167,7 +170,7 @@
           <bool>false</bool>
          </property>
          <property name="alignment">
-          <set>Qt::AlignCenter</set>
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
          </property>
         </widget>
        </item>
