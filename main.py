@@ -10,18 +10,18 @@ from src.MainWindow import MainWindow
 
 
 
-'Hauptprogramm starten'
+"""Hauptprogramm starten"""
 if __name__ == "__main__":
 
-    'QApplication initialisieren'
+    """QApplication initialisieren"""
     app = QApplication(sys.argv)
 
-    'Stylesheet einlesen und anwenden'
+    """Stylesheet einlesen und anwenden"""
     with open('./styles.qss', 'r') as f:
         stylesheet = f.read()
     app.setStyleSheet(stylesheet) 
 
-    'Hauptfenster anzeigen'    
+    """Hauptfenster anzeigen"""   
     main_Window = MainWindow()
     main_Window.show()
     sys.exit(app.exec())
