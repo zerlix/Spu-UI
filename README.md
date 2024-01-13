@@ -1,10 +1,7 @@
 
 <br />
 <h3 align="center"><a href="">Spu-UI</a></h3>
-    <p align="center">
-    Benutzeroberfläsche für den SpuMax.
-    </p>
-</p>
+
 
 <!-- TABLE OF CONTENT> -->
 ## Inhaltsverzeichnis
