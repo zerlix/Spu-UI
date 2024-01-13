@@ -82,44 +82,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
 
 
-
+# Hauptprogramm starten
 if __name__ == "__main__":
+
+    # QApplication initialisieren
     app = QApplication(sys.argv)
- 
-    stylesheet = """
-    MainWindow {
-        background-color: #1a1a1a;
-        background-image: url("resources/images/glass-transparent-2.png"); 
-        background-repeat: no-repeat; 
-        background-position: center;
-        border: none;   
-    }
-    QLabel#labelProjektname {
-        color: white;
-        font-family: 'spu';
-        font-size: 36px;
-    }
-    QPushButton#pushButtonProjektname {
-        border: none;
-        background-color: transparent;
-        background-image: url("resources/images/gear-42.png");
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    QPushButton#pushButtonProjektname:hover {
-        border: none;
-        background-color: transparent;
-        background-image: url("resources/images/gear-64.png");
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    DialogProjectName {
-        background-color: #1a1a1a;
-        border: none;
-    }
-"""
+
+    # Stylesheet einlesen und anwenden
+    with open('./styles.qss', 'r') as f:
+        stylesheet = f.read()
     app.setStyleSheet(stylesheet) 
-    
+
+    # Hauptfenster anzeigen    
     main_Window = MainWindow()
     main_Window.show()
     sys.exit(app.exec())
