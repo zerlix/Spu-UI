@@ -35,7 +35,6 @@ class DialogProjectName(QMainWindow, Ui_DialogProjectName):
     def changeProjectName(self):
         self.lineEditProjektName.textChanged.connect(self.main_window.labelProjektname.setText(self.lineEditProjektName.text()))
         '''TODO: 
-           Projekname musss zwischengespeichert werden und bei Programmstart wieder geladen werden
-           - Dazu muss der Projektname in einer Datei gespeichert werden
+           - Projekname musss zwischengespeichert werden und bei Programmstart wieder geladen werden
         '''
       
