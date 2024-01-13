@@ -114,9 +114,9 @@
       <height>152</height>
      </rect>
     </property>
-    <layout class="QFormLayout" name="M2formLayout">
+    <layout class="QFormLayout" name="m2formLayout">
      <item row="0" column="0">
-      <widget class="QLCDNumber" name="M2lcdNumber">
+      <widget class="QLCDNumber" name="m2lcdNumber">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
          <horstretch>0</horstretch>
@@ -143,14 +143,14 @@
      <item row="0" column="1">
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QPushButton" name="M2pushButton">
+        <widget class="QPushButton" name="m2pushButton">
          <property name="text">
           <string>Reset</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="M2label">
+        <widget class="QLabel" name="m2label">
          <property name="font">
           <font>
            <family>Segoe Fluent Icons</family>

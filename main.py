@@ -59,12 +59,24 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setWindowFlag(Qt.FramelessWindowHint) 
         #self.showFullScreen()
 
+        # dialog fenster projektname
         self.pushButtonProjektname.clicked.connect(self.openDialogProjectName)
         self.dialogProjectName = DialogProjectName(self)
-         
+        
+        # M2 Resetbutton
+        self.m2pushButton.clicked.connect(self.M2ResetClicked)
+        
     'Methode zum öffnen des Dialogs zum editieren des Projektnamens '
     def openDialogProjectName(self):
         self.dialogProjectName.show()
+
+    'M2 Resetbutton clicked'    
+    def M2ResetClicked(self):
+        self.resetM2Lcd()
+    
+    'setze LCD zurück'
+    def resetM2Lcd(self):
+        self.m2lcdNumber.display(0)
 
 
 
@@ -108,6 +120,7 @@ stylesheet = """
     }
 
 """
+
 
 
 
