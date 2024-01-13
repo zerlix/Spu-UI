@@ -1,3 +1,7 @@
+'''
+einfaches script um *.ui dateien im Verzeichnis ./ui zu kompilieren 
+die kompilierten python datei befinden sich dann im verzeichnis ./src
+'''
 import os
 
 ui_dir = './ui'
