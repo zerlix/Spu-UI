@@ -1,0 +1,7 @@
+MainWindow {
+    background-image: url("resources/images/glass-transparent-2.png"); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    border: none;   
+}
+    

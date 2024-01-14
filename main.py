@@ -8,20 +8,37 @@ import os
 from PySide6.QtWidgets import QApplication
 from src.MainWindow import MainWindow
 
-theme = 'resources/styles/dark.qss'
+"TODO: Muss aus Configuration geladen werden"
+theme = './resources/styles/light.qss'
+#theme = './resources/styles/dark.qss'
+
+
+
+"""Stylesheet aus Dateien zusammenführen"""
+def add_stylesheets():
+    stylesheet = ''
+    
+    "Stylesheets einlesen" 
+    with open('./resources/styles/styles.qss', 'r') as f:
+        cssMain = f.read()
+    
+    with open(theme, 'r') as f:
+        cssTheme = f.read()
+    
+    "Beide Stylesheets zusammenführen"
+    stylesheet = cssMain + "\n" + cssTheme
+
+    app.setStyleSheet(stylesheet) 
+
+
+
 
 """Hauptprogramm starten"""
 if __name__ == "__main__":
 
     """QApplication initialisieren"""
     app = QApplication(sys.argv)
-
-    """Stylesheet einlesen und anwenden"""
-    theme = './resources/styles/light.qss'
-    #theme = './resources/styles/dark.qss'
-    with open(theme, 'r') as f:
-        stylesheet = f.read()
-    app.setStyleSheet(stylesheet) 
+    add_stylesheets();
 
     """Hauptfenster anzeigen"""   
     main_Window = MainWindow()

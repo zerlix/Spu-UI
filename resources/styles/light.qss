@@ -1,35 +1,47 @@
-    QPushButton#pushButtonProjektname {
-        border: none;
-        background-color: transparent;
-        background-image: url("resources/images/red/edit-2-52.png");
-        /*background-image: url("resources/images/red/edit-2-38.png");*/
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    QPushButton#pushButtonProjektname:hover {
-        border: none;
-        background-color: transparent;
-        background-image: url("resources/images/red/edit-2-64.png");
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    QLabel#iconCem {
-        background-color: transparent;
-        background-image: url("resources/images/red/database-6-64.png");
-        background-repeat: no-repeat;
-        background-position: right;
-    }
+ /** Dunkles Stylesheet **/
+MainWindow {
+    border: none;
+}
+    
+  
+QPushButton#pushButtonProjektname {
+    border: none;
+    background-color: transparent;
+    background-image: url("resources/images/red/edit-2-52.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-    QLabel#iconConcrete{
-        background-color: transparent;
-        background-image: url("resources/images/red/bobbin-64.png");
-        background-repeat: no-repeat;
-        background-position: right;
-    }
+QPushButton#pushButtonProjektname:hover {
+    border: none;
+    background-color: transparent;
+    background-image: url("resources/images/red/edit-2-64.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-    QLabel#iconWater {
-        background-color: transparent;
-        background-image: url("resources/images/red/fosset-64.png");
-        background-repeat: no-repeat;
-        background-position: right;
-    }
+NoDialogProjectName {
+    background-color: #1a1a1a;
+    border: none;
+}
+
+QLabel#iconCem {
+    background-color: transparent;
+    background-image: url("resources/images/red/database-6-64.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+QLabel#iconConcrete{
+    background-color: transparent;
+    background-image: url("resources/images/red/bobbin-64.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+QLabel#iconWater {
+    background-color: transparent;
+    background-image: url("resources/images/red/fosset-64.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
