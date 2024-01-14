@@ -2,17 +2,16 @@
 import sys
 import os
 
-'Virtuelle Tastatur'
-#os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
-
+from PySide6.QtCore import QSettings, QStandardPaths
 from PySide6.QtWidgets import QApplication
 from src.MainWindow import MainWindow
 
-"TODO: Muss aus Configuration geladen werden"
-theme = './resources/styles/light.qss'
-#theme = './resources/styles/dark.qss'
+''' Konfigurationsdatei laden '''
+cfg_file = QSettings('./config.ini', QSettings.IniFormat)
 
 
+'Virtuelle Tastatur'
+#os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
 
 """Stylesheet aus Dateien zusammenführen"""
 def add_stylesheets():
@@ -22,14 +21,17 @@ def add_stylesheets():
     with open('./resources/styles/styles.qss', 'r') as f:
         cssMain = f.read()
     
-    with open(theme, 'r') as f:
-        cssTheme = f.read()
+    theme = cfg_file.value('theme')
+    
+    print("Theme: "+theme)
+
+    with open("./resources/styles/"+theme+".qss", 'r') as f:
+       cssTheme = f.read()
     
     "Beide Stylesheets zusammenführen"
     stylesheet = cssMain + "\n" + cssTheme
 
     app.setStyleSheet(stylesheet) 
-
 
 
 
