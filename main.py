@@ -17,8 +17,8 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     """Stylesheet einlesen und anwenden"""
-    #theme = './resources/styles/styles.qss'
-    theme = './resources/styles/dark.qss'
+    theme = './resources/styles/light.qss'
+    #theme = './resources/styles/dark.qss'
     with open(theme, 'r') as f:
         stylesheet = f.read()
     app.setStyleSheet(stylesheet) 

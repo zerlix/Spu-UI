@@ -8,16 +8,12 @@
     }
     QLabel#labelProjektname {
         color: rgb(128, 119, 119);
-        font-family: 'spu';
-        font-size: 36px;
     }
-    
     
     QPushButton#pushButtonProjektname {
         border: none;
         background-color: transparent;
         background-image: url("resources/images/red/edit-2-52.png");
-        /*background-image: url("resources/images/red/edit-2-38.png");*/
         background-repeat: no-repeat;
         background-position: center;
     }
