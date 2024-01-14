@@ -2,7 +2,6 @@
 import sys
 import os
 
-from PySide6.QtCore import QSettings, QStandardPaths
 from PySide6.QtWidgets import QApplication
 from src.MainWindow import MainWindow
 from src.config import conf
@@ -26,7 +25,6 @@ def addStylesheet():
     stylesheet = cssMain + '\n' + cssTheme
 
     app.setStyleSheet(stylesheet) 
-
 
 
 
