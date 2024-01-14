@@ -37,5 +37,5 @@ class DialogProjectName(QMainWindow, Ui_DialogProjectName):
         pName = self.lineEditProjektName.text()
         '''Speichern des Projektnamens in der Konfigurationsdatei'''
         conf.setValue('lastProject/name', pName)
-        conf.flush()
+        conf.sync()
         self.lineEditProjektName.textChanged.connect(self.main_window.labelProjektname.setText(pName))
