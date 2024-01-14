@@ -3,6 +3,7 @@ from PySide6.QtCore import Qt
 from src.ui_DialogProjectName import Ui_DialogProjectName
 from src.config import conf
 
+
 class DialogProjectName(QMainWindow, Ui_DialogProjectName):
     '''Klasse die den Dialog zum editieren des Projekt Name erstellt'''    
     def __init__(self, main_window):
@@ -34,8 +35,7 @@ class DialogProjectName(QMainWindow, Ui_DialogProjectName):
     '''ändert den Projektnamen'''
     def changeProjectName(self):
         pName = self.lineEditProjektName.text()
-        self.lineEditProjektName.textChanged.connect(self.main_window.labelProjektname.setText(pName))
         '''Speichern des Projektnamens in der Konfigurationsdatei'''
-        conf.beginGroup('lastProject')
-        conf.setValue('name', pName)
-        conf.endGroup()
+        conf.setValue('lastProject/name', pName)
+        conf.flush()
+        self.lineEditProjektName.textChanged.connect(self.main_window.labelProjektname.setText(pName))
