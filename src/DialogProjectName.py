@@ -1,24 +1,21 @@
-from src.ui_DialogProjectName import Ui_DialogProjectName
 from PySide6.QtWidgets import QMainWindow, QApplication
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QScreen
-
+from src.ui_DialogProjectName import Ui_DialogProjectName
+from src.config import conf
 
 class DialogProjectName(QMainWindow, Ui_DialogProjectName):
-    """Klasse die den Dialog zum editieren des Projekt Name erstellt"""    
+    '''Klasse die den Dialog zum editieren des Projekt Name erstellt'''    
     def __init__(self, main_window):
         self.main_window = main_window
         super(DialogProjectName, self).__init__()
         self.setupUi(self)
         self.setWindowFlag(Qt.FramelessWindowHint)
         
-        """Buttons connecten"""
+        '''Buttons connecten'''
         self.pushButton_Abbrechen.clicked.connect(self.close)
         self.pushButton_OK.clicked.connect(self.okClicked)
 
-        """ Bildschirmauflösung des Primärmonitors feststellen
-            um das Dialogfenster an den Bildschirm zu positionieren
-        """
+        ''' Bildschirmauflösung des Primärmonitors feststellen um das Dialogfenster an den Bildschirm zu positionieren'''
         screens = QApplication.screens()
         screen = screens[0]
         screen_geometry = screen.availableGeometry()
@@ -29,15 +26,16 @@ class DialogProjectName(QMainWindow, Ui_DialogProjectName):
         y = screen_y + 20
         self.move(x, y)
 
-    """Ok wurde gedrückt"""
+    '''Ok wurde gedrückt'''
     def okClicked(self):
         self.changeProjectName()
         self.close()
 
-    """ändert den Projektnamen"""
+    '''ändert den Projektnamen'''
     def changeProjectName(self):
-        self.lineEditProjektName.textChanged.connect(self.main_window.labelProjektname.setText(self.lineEditProjektName.text()))
-        """TODO: 
-           - Projekname musss zwischengespeichert werden und bei Programmstart wieder geladen werden
-        """
-      
+        pName = self.lineEditProjektName.text()
+        self.lineEditProjektName.textChanged.connect(self.main_window.labelProjektname.setText(pName))
+        '''Speichern des Projektnamens in der Konfigurationsdatei'''
+        conf.beginGroup('lastProject')
+        conf.setValue('name', pName)
+        conf.endGroup()
