@@ -11,6 +11,10 @@
 - [Ordnerstruktur](#Ordnerstruktur)
 
 
+## Voraussetzung ##
+Folgende Pakete müssen auf den Raspberry isntalliert sein.
+`sudo apt install libxcb-cursor0`
+ 
 ## Kompilieren des UI Files
 Die UI Dateien aus dem Verzeichnis `./ui` müssen mit dem script `ui_compile.py` kompiliert werden<br />
 Die kompilierten Python Dateien liegen dann im Verzeichnis `./src` <br />
