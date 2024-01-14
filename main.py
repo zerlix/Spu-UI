@@ -8,7 +8,7 @@ import os
 from PySide6.QtWidgets import QApplication
 from src.MainWindow import MainWindow
 
-
+theme = 'resources/styles/dark.qss'
 
 """Hauptprogramm starten"""
 if __name__ == "__main__":
@@ -17,7 +17,9 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     """Stylesheet einlesen und anwenden"""
-    with open('./styles.qss', 'r') as f:
+    #theme = './resources/styles/styles.qss'
+    theme = './resources/styles/dark.qss'
+    with open(theme, 'r') as f:
         stylesheet = f.read()
     app.setStyleSheet(stylesheet) 
 
