@@ -3,7 +3,6 @@
 ui/MainWindow_ui.py
 ui/DialogProjectName_ui.py
 src/__pycache__
-src/MainWindow_ui.py
-src/DialogProjectName_ui.py
-
+src/ui_MainWindow.py
+src/ui_DialogProjectName.py
 
