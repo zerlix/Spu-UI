@@ -37,7 +37,3 @@ Die kompilierten Python Dateien liegen dann im Verzeichnis `./src` <br />
 
 - **resources/**: Ordner für Ressourcen.
   - **images/**: Ein Unterordner für Bilder.
-
-- **tests/**: Unit-Tests.
-  - **\_\_init\_\_.py**: Eine leere Datei, die sicherstellt, dass Python den Ordner als Modul erkennt. 
-  - **test_mainwindow.py**: Beispielhafte Unit-Tests für die mainwindow.py-Datei.
