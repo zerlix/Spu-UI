@@ -12,7 +12,7 @@
 
 
 ## Voraussetzung ##
-Folgende Pakete müssen auf den Raspberry isntalliert sein.
+Folgende Pakete müssen auf den Raspberry installiert sein.
 `sudo apt install libxcb-cursor0`
  
 ## Kompilieren des UI Files
