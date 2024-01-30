@@ -20,11 +20,6 @@ QPushButton#pushButtonProjektname:hover {
     background-position: center;
 }
 
-NoDialogProjectName {
-    background-color: #1a1a1a;
-    border: none;
-}
-
 QLabel#iconCem {
     background-color: transparent;
     background-image: url("resources/images/red/database-6-64.png");
