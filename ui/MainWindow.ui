@@ -105,7 +105,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="layoutWidget1">
     <property name="geometry">
      <rect>
       <x>-10</x>
@@ -114,9 +114,9 @@
       <height>91</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QHBoxLayout" name="hLayout4">
      <item>
-      <spacer name="horizontalSpacer">
+      <spacer name="h4Spacer1">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -129,7 +129,7 @@
       </spacer>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QHBoxLayout" name="hLayout4a">
        <item>
         <widget class="QLabel" name="iconCem">
          <property name="minimumSize">
@@ -271,7 +271,7 @@
       </layout>
      </item>
      <item>
-      <spacer name="horizontalSpacer_2">
+      <spacer name="h4Spacer2">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -285,7 +285,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="layoutWidget2">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -294,9 +294,9 @@
       <height>154</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <layout class="QHBoxLayout" name="hLayout2">
      <item>
-      <spacer name="horizontalSpacer_3">
+      <spacer name="h2Spacer2">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -374,7 +374,7 @@
       </layout>
      </item>
      <item>
-      <spacer name="horizontalSpacer_4">
+      <spacer name="h2Spacer1">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -388,7 +388,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="layoutWidget_2">
+   <widget class="QWidget" name="layoutWidget3">
     <property name="geometry">
      <rect>
       <x>-10</x>
@@ -397,9 +397,9 @@
       <height>91</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <layout class="QHBoxLayout" name="hLayout3">
      <item>
-      <spacer name="horizontalSpacer_5">
+      <spacer name="h3Spacer1">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -412,9 +412,9 @@
       </spacer>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <layout class="QHBoxLayout" name="hLayout3a">
        <item>
-        <widget class="QLabel" name="iconCem_2">
+        <widget class="QLabel" name="icon1">
          <property name="minimumSize">
           <size>
            <width>64</width>
@@ -430,7 +430,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLCDNumber" name="lcdCem_2">
+        <widget class="QLCDNumber" name="lcd1">
          <property name="minimumSize">
           <size>
            <width>200</width>
@@ -443,7 +443,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="unitCem_2">
+        <widget class="QLabel" name="unit1">
          <property name="minimumSize">
           <size>
            <width>80</width>
@@ -462,7 +462,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="iconConcrete_2">
+        <widget class="QLabel" name="icon2">
          <property name="minimumSize">
           <size>
            <width>64</width>
@@ -478,7 +478,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLCDNumber" name="lcdConcrete_2">
+        <widget class="QLCDNumber" name="lcd2">
          <property name="minimumSize">
           <size>
            <width>200</width>
@@ -488,7 +488,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="unitConcrete_2">
+        <widget class="QLabel" name="unit2">
          <property name="minimumSize">
           <size>
            <width>80</width>
@@ -507,7 +507,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="iconWater_2">
+        <widget class="QLabel" name="icon3">
          <property name="minimumSize">
           <size>
            <width>64</width>
@@ -523,7 +523,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLCDNumber" name="lcdWater_2">
+        <widget class="QLCDNumber" name="lcd3">
          <property name="minimumSize">
           <size>
            <width>200</width>
@@ -533,7 +533,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="unitWater_2">
+        <widget class="QLabel" name="unit3">
          <property name="minimumSize">
           <size>
            <width>80</width>
@@ -554,7 +554,7 @@
       </layout>
      </item>
      <item>
-      <spacer name="horizontalSpacer_6">
+      <spacer name="h3Spacer2">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
