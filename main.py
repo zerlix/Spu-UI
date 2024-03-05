@@ -17,7 +17,7 @@ if __name__ == '__main__':
     '''QApplication initialisieren'''
     app = QApplication(sys.argv)
     app.setStyleSheet(merge_Stylesheet()) 
-
+    addStylesheet()
     '''Hauptfenster anzeigen'''   
     main_Window = MainWindow()
     main_Window.show()
