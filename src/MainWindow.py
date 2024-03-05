@@ -4,8 +4,6 @@ from src.ui_MainWindow import Ui_MainWindow
 from src.DialogProjectName import DialogProjectName
 from src.config import conf
 
-
-
 '''Klasse die das Hauptfenster erzeugt'''
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
